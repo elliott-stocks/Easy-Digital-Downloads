@@ -104,7 +104,7 @@ function edd_get_tax_rate( $country = false, $state = false ) {
 					continue;
 
 				if( ! empty( $tax_rate['global'] ) ) {
-					if( ! empty( $tax_rate['rate'] ) ) {
+					if( isset( $tax_rate['rate'] ) ) {
 						$rate = number_format( $tax_rate['rate'], 4 );
 					}
 				} else {
